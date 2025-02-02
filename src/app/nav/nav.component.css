@@ -2,3 +2,7 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: #B49C73;
 }
+
+.p-3 {
+    padding: 1rem !important;
+  }
