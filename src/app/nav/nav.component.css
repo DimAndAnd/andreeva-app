@@ -3,6 +3,48 @@
     color: #B49C73;
 }
 
+.navbar-brand {
+    font-weight: 900;
+    font-size: large;
+}
+
 .p-3 {
     padding: 1rem !important;
-  }
+}
+
+h3,
+h4 {
+    font-weight: 700;
+}
+.testimonial-carousel .owl-dots {
+    position: absolute;
+    width: 100%;
+    top: -50px;
+    text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: blue;
+}
+
+.testimonial-carousel .owl-dot::after {
+    position: absolute;
+    content: "";
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: black;
+}
+
