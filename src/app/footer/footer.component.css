@@ -1,0 +1,15 @@
+.footer_section {
+    background-color: rgb(108 117 125);
+    padding: 20px;
+    font-weight: 500;
+}
+
+.footer_section p {
+    color: rgb(255 193 7);
+    margin: 0;
+    text-align: center;
+}
+
+.footer_section a {
+    color: #292929;
+}
