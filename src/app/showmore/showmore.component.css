@@ -43,7 +43,7 @@
     color: #d92cf9;
     position: absolute;
     font-size: 10px;
-    left: -14.5%;
+    left: -5%;
     z-index: 1;
 }
 .timeline-content h4.title {
@@ -55,7 +55,7 @@
     color: #636a82;
     font-size: 14px;
     font-weight: 300;
-    margin: 18px 0 20px;
+    margin: 10px 0 20px;
 }
 .main-timeline .description {
     font-size: 14px;
@@ -76,3 +76,152 @@
 }
 
 .experience-time-responsive{display: none;}
+
+
+
+/*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume {
+    padding-top: 40px;
+}
+.resume .resume-item {
+  margin-bottom: 3rem;
+}
+
+.resume .resume-item .resume-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  color: #B49C73;
+}
+
+.resume .resume-item .resume-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #1387c1;
+  bottom: 0;
+  left: 0;
+}
+
+.resume .resume-item .resume-content {
+  padding-left: 1.25rem;
+  border-left: 2px solid color-mix(in srgb, #1387c1, transparent 85%);
+}
+
+.resume .resume-item article {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.resume .resume-item article::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: -1.8rem;
+  top: 0.25rem;
+  background: white;
+  border: 2px solid #1387c1;
+}
+
+.resume .resume-item article h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #B49C73;
+}
+
+.resume .resume-item article h5 {
+  font-size: 1rem;
+  background: color-mix(in srgb, #1387c1, transparent 92%);
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #1387c1;
+  border-radius: 4px;
+}
+
+.resume .resume-item article .institution,
+.resume .resume-item article .company {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: color-mix(in srgb, #B49C73, transparent 25%);
+}
+
+.resume .resume-item article p {
+  margin-bottom: 1rem;
+}
+
+.resume .resume-item article ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.resume .resume-item article ul li {
+  padding-bottom: 0.75rem;
+  position: relative;
+}
+
+.resume .resume-item article ul li:last-child {
+  padding-bottom: 0;
+}
+
+.resume .skill-item {
+  margin-bottom: 2rem;
+}
+
+.resume .skill-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #B49C73;
+}
+
+.resume .skill-item .progress {
+  height: 0.75rem;
+  background-color: color-mix(in srgb, #1387c1, transparent 92%);
+  border-radius: 1rem;
+  overflow: visible;
+}
+
+.resume .skill-item .progress .progress-bar {
+  background-color: #1387c1;
+  position: relative;
+  border-radius: 1rem;
+  width: 0;
+  transition: width 1s ease;
+}
+
+.resume .skill-item .progress .progress-bar::after {
+  content: attr(aria-valuenow) "%";
+  position: absolute;
+  right: 0;
+  top: -1.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1387c1;
+}
+
+@media (max-width: 991.98px) {
+  .resume .resume-item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .resume .resume-content {
+    padding-left: 1rem !important;
+  }
+
+  .resume article::before {
+    left: -2rem !important;
+  }
+}
