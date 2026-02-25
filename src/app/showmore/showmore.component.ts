@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-showmore',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './showmore.component.html',
   styleUrl: './showmore.component.css'
 })
-export class ShowmoreComponent {
-
+export class ShowmoreComponent implements OnInit {
+  constructor() { }
+  ngOnInit(): void {
+    AOS.init();
+  }
 }
