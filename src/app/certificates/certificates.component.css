@@ -9,20 +9,20 @@
     display: none;
 }
 
-.group{
+.group {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
-    animation: spin 90s infinite linear;
+    animation: spin 60s infinite linear;
     padding-right: 1em;
 }
 
-.card{
+.card {
     height: 30em;
 }
 
-img{
+img {
     height: 30em;
 }
 

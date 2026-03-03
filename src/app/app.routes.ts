@@ -11,6 +11,7 @@ import { IntellectualPropertyLawComponent } from './Law-services/intellectual-pr
 import { LaborLawComponent } from './Law-services/labor-law/labor-law.component';
 import { PublicProcurementComponent } from './Law-services/public-procurement/public-procurement.component';
 import { SubscriptionServiceComponent } from './Law-services/subscription-service/subscription-service.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: '/home' },
@@ -25,5 +26,6 @@ export const routes: Routes = [
     {path: 'public-procurement', component: PublicProcurementComponent},
     {path: 'subscription-service', component: SubscriptionServiceComponent},
     {path: 'show-more', component: ShowmoreComponent},
-    {path: 'prices', component: PricesComponent},    
+    {path: 'prices', component: PricesComponent}, 
+    {path: 'contact', component: ContactComponent},   
 ];
