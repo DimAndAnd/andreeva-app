@@ -80,13 +80,13 @@
     margin-bottom: 0;
 }
 
-.contact .bg-image {
+.contact .contact-image {
     border-radius: 1rem;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 992px) {
-    .contact .contact-form {
+    .contact .contact-image {
         padding: 1.5rem;
     }
 }
