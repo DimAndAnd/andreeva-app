@@ -303,17 +303,19 @@
 </section><!-- /Stats Section -->
 
 <!-- Carousel wrapper -->
-<div id="main-carousel" class="carousel slide carousel-fade text-center" data-ride="carousel">
+<div id="main-carousel" class="carousel slide carousel-dark slide carousel-fade text-center" data-ride="carousel">
     <div class="text-center pb-5">
         <h6 class="text-uppercase">Мнения</h6>
         <h1 class="mb-5">Какво казват клиентите за мен</h1>
     </div>
     <!-- Controls -->
     <div class="d-flex justify-content-center mb-4">
-        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
     </div>
     <!-- Inner -->
     <div class="carousel-inner py-4">
@@ -382,6 +384,7 @@
                     </div>
                 </div>
             </div>
+            <p></p>
         </div>
 
         <!-- Single item -->
@@ -451,6 +454,7 @@
                     </div>
                 </div>
             </div>
+            <p></p>
         </div>
 
         <!-- Single item -->
@@ -519,10 +523,22 @@
                         </ul>
                     </div>
                 </div>
+                <p></p>
             </div>
         </div>
     </div>
     <!-- Inner -->
+
+     <a class="carousel-control-prev" href="#main-carousel" data-slide="prev">
+            <div class="btn btn-lg btn-secondary btn-lg-square">
+                <span class="carousel-control-prev-icon"></span>
+            </div>
+        </a>
+        <a class="carousel-control-next" href="#main-carousel" data-slide="next">
+            <div class="btn btn-lg btn-secondary btn-lg-square">
+                <span class="carousel-control-next-icon"></span>
+            </div>
+        </a>
 </div>
 <!-- Carousel wrapper -->
 <app-certificates></app-certificates>
